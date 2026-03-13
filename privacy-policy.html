@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordFlash - Privacy Policy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --primary-dark: #0d47a1;
+            --secondary-color: #34a853;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #ffffff;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: var(--bg-color);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(26, 115, 232, 0.2);
+        }
+
+        .logo-text h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        /* Main Content */
+        .main-title {
+            font-size: 36px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: var(--text-light);
+            font-size: 16px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .last-updated i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title i {
+            color: var(--primary-color);
+        }
+
+        .section-content {
+            font-size: 17px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .section-content p {
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .highlight-box i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        /* List Styles */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+
+        .email-placeholder {
+            background-color: var(--bg-light);
+            padding: 12px 20px;
+            border-radius: var(--radius);
+            border: 1px dashed var(--border-color);
+            color: var(--text-light);
+            font-family: monospace;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            .main-title {
+                font-size: 28px;
+            }
+            
+            .section-title {
+                font-size: 22px;
+            }
+            
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .logo-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+            
+            .logo-text h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>WordFlash</h1>
+                    <p>Learn English words while browsing</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h1 class="main-title">Privacy Policy</h1>
+            <div class="last-updated">
+                <i class="fas fa-calendar-alt"></i> Last Updated: March 2026
+            </div>
+
+            <!-- Data Collection Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-database"></i> Data Collection
+                </h2>
+                <div class="section-content">
+                    <p>WordFlash is designed with your privacy as our top priority. We want to be completely transparent about what data we collect and how we use it.</p>
+                    
+                    <div class="highlight-box">
+                        <p><i class="fas fa-shield-alt"></i> <strong>Important:</strong> WordFlash does NOT collect, transmit, or store any personal data, browsing history, or learning records on remote servers.</p>
+                    </div>
+                    
+                    <p>The only data stored by WordFlash is:</p>
+                    <ul>
+                        <li><strong>Learning Progress:</strong> Your current learning level, mastered words, and study statistics</li>
+                        <li><strong>Word Library Configuration:</strong> Custom word lists, difficulty settings, and personal preferences</li>
+                        <li><strong>Extension Settings:</strong> Display frequency, notification preferences, and UI customization</li>
+                    </ul>
+                    
+                    <p>All this data is stored exclusively in your browser's local storage using <code>chrome.storage.local</code>. This means your data never leaves your device and is not accessible to us or any third parties.</p>
+                </div>
+            </section>
+
+            <!-- Data Usage Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-line"></i> Data Usage
+                </h2>
+                <div class="section-content">
+                    <p>The data stored locally in your browser is used solely to provide and enhance your WordFlash learning experience:</p>
+                    
+                    <ul>
+                        <li>To track your learning progress and adapt word difficulty</li>
+                        <li>To remember your preferences and settings between browsing sessions</li>
+                        <li>To personalize the word suggestions based on your learning history</li>
+                        <li>To maintain consistency in your learning journey</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><i class="fas fa-handshake"></i> <strong>No Data Sharing:</strong> We do not share, sell, rent, or trade any user data with third parties. Since all data remains on your device, there is no mechanism for data sharing.</p>
+                    </div>
+                    
+                    <p>WordFlash operates entirely offline in terms of data storage. The extension does not connect to any external servers for data processing or storage purposes.</p>
+                </div>
+            </section>
+
+            <!-- Permissions Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-key"></i> Permissions
+                </h2>
+                <div class="section-content">
+                    <p>WordFlash requests the <code>"host_permissions": ["<all_urls>"]</code> permission for a single, specific purpose:</p>
+                    
+                    <div class="highlight-box">
+                        <p><i class="fas fa-eye"></i> <strong>Permission Purpose:</strong> To inject non-intrusive pop-up cards on web pages you visit, displaying English words for learning.</p>
+                    </div>
+                    
+                    <p>This permission is essential for WordFlash's core functionality but comes with important privacy safeguards:</p>
+                    
+                    <ul>
+                        <li><strong>No Tracking:</strong> We do not track your browsing behavior, visited URLs, or online activities</li>
+                        <li><strong>No Data Extraction:</strong> We do not read, collect, or transmit content from web pages you visit</li>
+                        <li><strong>No Behavioral Profiling:</strong> We do not create profiles based on your browsing habits</li>
+                        <li><strong>Limited Scope:</strong> The extension only adds visual elements (word cards) to pages; it does not interact with page content</li>
+                    </ul>
+                    
+                    <p>The <code><all_urls></code> permission is a technical requirement of the Chrome Extensions platform to allow WordFlash to work across all websites. It does not grant us access to your personal data or browsing history.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i> Contact
+                </h2>
+                <div class="section-content">
+                    <p>If you have any questions or concerns about this Privacy Policy or WordFlash's data practices, please feel free to contact us.</p>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-at"></i>
+                        <div class="email-placeholder">tlz13579246810@gmail.com</div>
+                    </div>
+                    
+                    <p style="margin-top: 20px; font-size: 15px; color: var(--text-light);">
+                        <i class="fas fa-info-circle"></i> <em>Note: This is a placeholder email address. Please replace it with your actual contact email before publishing.</em>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 WordFlash Chrome Extension. All rights reserved.</p>
+            <p>This privacy policy is subject to change. Please check back periodically for updates.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to update the current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.querySelector('.footer p:first-child');
+            if (yearElement) {
+                yearElement.innerHTML = yearElement.innerHTML.replace('2026', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
